@@ -42,17 +42,19 @@ export default () => {
       </p>
       <p>You are here for the data, so here it is!</p>
       <br />
-      <Chart
-        subredditChartData={subredditChartData}
-        literatureChartData={literatureChartData}
-      />
+      <div className="chart-container">
+        <Chart
+          subredditChartData={subredditChartData}
+          literatureChartData={literatureChartData}
+        />
+      </div>
       <div className="description">
         <h2>So what does this graph mean?</h2>
-        <p>I analyzed some literature texts and some popular subreddits</p>
         <p>
-          Out of the ones I looked at, r/news, r/askhistorians and r/funny had
-          the highest lexical diversity. It was really surprsing to me that
-          r/funny had such a high MTLD. I am not sure exactly why.
+          I analyzed some literature texts and popular subreddits. Out of the
+          ones I looked at, r/news, r/askhistorians and r/funny had the highest
+          lexical diversity. It was really surprsing to me that r/funny had such
+          a high MTLD. I am not sure exactly why.
         </p>
         <p>
           r/philosophy and r/askhistorians has the highest average sentence
@@ -60,9 +62,9 @@ export default () => {
           communicate usually requires more words to elucidate.
         </p>
         <p>
-          However, classic literature pieces such as Pride and Prejudice and
-          Little Women have a fairly high MTLD score and much higher average
-          sentence length than the subreddits analyzed.
+          Compared to subreddits, classic literature pieces such as Pride and
+          Prejudice and Little Women have a fairly high MTLD score and much
+          higher average sentence length than the subreddits analyzed.
         </p>
       </div>
     </>
