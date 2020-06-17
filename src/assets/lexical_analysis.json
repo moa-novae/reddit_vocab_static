@@ -1,0 +1,30 @@
+{
+    "askreddit": {
+        "mtld": 49.23452452022917,
+        "avg_sentence_length": 11.207843137254901
+    },
+    "askhistorians": {
+        "mtld": 55.46158240241722,
+        "avg_sentence_length": 15.125091979396615
+    },
+    "philosophy": {
+        "mtld": 49.62769583088033,
+        "avg_sentence_length": 16.739475774424147
+    },
+    "news": {
+        "mtld": 58.940540530131145,
+        "avg_sentence_length": 13.724881995954147
+    },
+    "funny": {
+        "mtld": 54.23725859938247,
+        "avg_sentence_length": 10.653481012658228
+    },
+    "animalcrossing": {
+        "mtld": 48.847798080779626,
+        "avg_sentence_length": 7.425138632162661
+    },
+    "aww": {
+        "mtld": 50.978420172865675,
+        "avg_sentence_length": 9.495049504950495
+    }
+}

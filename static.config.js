@@ -1,41 +1,34 @@
-import axios from 'axios'
-import path from 'path'
+import path from "path";
+import subredditData from './src/assets/lexical_analysis.json'
+import literatureData from './src/assets/literature_data.json'
 // import { Post } from './types'
 
 // Typescript support in static.config.js is not yet supported, but is coming in a future update!
 
 export default {
-  entry: path.join(__dirname, 'src', 'index.tsx'),
+  entry: path.join(__dirname, "src", "index.tsx"),
   getRoutes: async () => {
-    const { data: posts } /* :{ data: Post[] } */ = await axios.get(
-      'https://jsonplaceholder.typicode.com/posts'
-    )
     return [
       {
-        path: '/blog',
+        path: "/",
         getData: () => ({
-          posts,
-        }),
-        children: posts.map((post /* : Post */) => ({
-          path: `/post/${post.id}`,
-          template: 'src/containers/Post',
-          getData: () => ({
-            post,
-          }),
-        })),
+          subredditData,
+          literatureData
+        }
+        )
       },
-    ]
+    ];
   },
   plugins: [
     "react-static-plugin-sass",
-    'react-static-plugin-typescript',
     [
-      require.resolve('react-static-plugin-source-filesystem'),
+      require.resolve("react-static-plugin-source-filesystem"),
       {
-        location: path.resolve('./src/pages'),
+        location: path.resolve("./src/pages"),
       },
     ],
-    require.resolve('react-static-plugin-reach-router'),
-    require.resolve('react-static-plugin-sitemap'),
+    require.resolve("react-static-plugin-reach-router"),
+    require.resolve("react-static-plugin-sitemap"),
+    "react-static-plugin-typescript",
   ],
-}
+};

@@ -1,0 +1,18 @@
+{
+    "little_women": {
+        "mtld": 61.76354452318918,
+        "avg_sentence_length": 20.39671892678196
+    },
+    "pride_and_prejudice": {
+        "mtld": 62.82593945588141,
+        "avg_sentence_length": 21.47742452578146
+    },
+    "treasure_island": {
+        "mtld": 56.24290719924956,
+        "avg_sentence_length": 19.59727385377943
+    },
+    "the_cat_in_the_hat": {
+        "mtld": 27.054969992498123,
+        "avg_sentence_length": 9.115830115830116
+    }
+}
