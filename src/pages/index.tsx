@@ -51,20 +51,26 @@ export default () => {
       <div className="description">
         <h2>So what does this graph mean?</h2>
         <p>
-          I analyzed some literature texts and popular subreddits. Out of the
-          ones I looked at, r/news, r/askhistorians and r/funny had the highest
-          lexical diversity. It was really surprsing to me that r/funny had such
-          a high MTLD. I am not sure exactly why.
+          I analyzed some literature texts and popular subreddits' comment
+          sections. Out of the ones I looked at, r/news, r/askhistorians and
+          r/funny had the highest lexical diversity. It was really surprising to
+          me that r/funny had such a high MTLD. I am not sure why.
         </p>
         <p>
-          r/philosophy and r/askhistorians has the highest average sentence
-          length, which makes plenty of sense to me since the ideas they try to
-          communicate usually requires more words to elucidate.
+          r/philosophy and r/askhistorians have the highest average sentence
+          length, which makes sense to me due to the nature of those topics.
         </p>
         <p>
           Compared to subreddits, classic literature pieces such as Pride and
           Prejudice and Little Women have a fairly high MTLD score and much
-          higher average sentence length than the subreddits analyzed.
+          higher average sentence length than the subreddits analyzed. To better
+          understand what MTLD means, I also looked at The Cat in the Hat. It
+          has the lowest MTLD and second lowest sentence length out of all text measured.
+        </p>
+        <h2>What is the sample size of the subreddit comment sections?</h2>
+        <p>
+          Roughly, 20000 words (it is actually tokens) are taken from yearly top
+          posts of individual subreddits and analyzed.
         </p>
       </div>
     </>

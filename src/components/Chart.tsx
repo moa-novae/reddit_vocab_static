@@ -20,7 +20,7 @@ type ChartProps = {
 export default ({ subredditChartData, literatureChartData }: ChartProps) => {
   return (
     <ResponsiveContainer width="100%" aspect={1.8}>
-      <ScatterChart>
+      <ScatterChart onClick={() => {}}>
         <XAxis
           dataKey="averageSentenceLength"
           name="Average Sentence Length"
