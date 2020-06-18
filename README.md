@@ -1,21 +1,13 @@
-# React-Static - TypeScript Template
+# Reddit Vocab Static
 
-To use this template, run `react-static create` and use the `typescript` template.
+## Overview
 
-## Path Aliases for Absolute Imports
+A simple static site that shows the lexical diversity of different subreddits and literature texts. The python script used to analyze each subreddit's comments can be accessed [here](https://github.com/moa-novae/reddit_vocab)
 
-`react-static-typescript-plugin` supports path aliases [since v3.1](https://github.com/react-static/react-static/pull/963#issuecomment-455596728). It has been set up in this template.
+## Screenshot
 
-```js
-// tsconfig.json
-{
-  // ...
-    "paths": {
-      "@components/*": ["src/components/*"]
-    },
-  // ...
-}
+![Chart showing various subreddits' lexical diversity](./src/assets/screenshot.png)
 
-// this works in your React app
-import FancyDiv from '@components/FancyDiv'
-```
+## Details
+
+This is built with React-static and written in TypeScript. Recharts is used to display graphical data.
